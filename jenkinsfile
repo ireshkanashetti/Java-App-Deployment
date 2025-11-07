@@ -1,10 +1,6 @@
 pipeline {
     agent any
-    tools {
-        maven 'maven-3.8'       // <-- हा नाव Jenkins → Global Tool Config मध्ये दिलेला असावा
-        jdk 'java-17'           // <-- हा पण तिथे define असेल
-    }
-
+    
     environment {
         SERVER_IP    = '13.50.243.27'
         SSH_CRED_ID  = 'node-app-key'
